@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border-color: #fb8303;
+    background-color: #fb8303;
+    height: 5px;
+}
+
+.Headword h1{
+    text-align: center;
+}
+
+.login{
+    width: 250px;
+    height: 150px;
+    margin: auto;
+    margin-top: 5%;
+    border: 3px solid #fb8303;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+
+
+.input{
+    font-size: 20px;
+    border: 1px solid #66ccff;
+    border-radius: 5px;
+    height: 30px;
+    width: 76%;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+
+.input input{
+    border: none;
+    outline-width: 0;
+    width: 90%;
+    height: 28px;
+    margin-left: 5%;
+}
+
+.submit{
+    border: none;
+    height: 30px;
+    width: 48%;
+    background-color: #66ccff;
+    margin: 20px 0 10px 40%;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

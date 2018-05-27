@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>New Student</title>
+    <link rel="stylesheet" th:href="@{/css/add.css}">
+</head>
+<body>
+<form  th:object="${students}" th:action="@{/add}"  method="post">
+    <div class="Registration">
+        <div class="Regtext">
+            <h2>New Student</h2>
+        </div>
+        <div class="input">
+            <input th:field="*{name}" type="text" name="name" placeholder="Name">
+        </div>
+        <div th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="validation-message"></div>
+        <div class="input">
+            <input type="text" name="surname" placeholder="Surname" th:field="*{surname}">
+        </div>
+        <div th:if="${#fields.hasErrors('surname')}" th:errors="*{surname}" class="validation-message"></div>
+        <div class="input">
+            <input type="number" name="course" placeholder="Course" th:field="*{course}">
+        </div>
+        <div th:if="${#fields.hasErrors('course')}" th:errors="*{course}" class="validation-message"></div>
+        <div class="input">
+            <input type="text" name="adviser" placeholder="Adviser" th:field="*{advisor}">
+        </div>
+        <div th:if="${#fields.hasErrors('advisor')}" th:errors="*{advisor}" class="validation-message"></div>
+
+        <div class="input">
+            <input type="email" name="email" placeholder="Email" th:field="*{email}">
+        </div>
+
+        <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="validation-message"></div>
+
+        <button class="submit" type="submit" text="Add student">
+            Add student
+        </button>
+        <div th:utext="${ok}" class="success-ok"></div>
+
+
+    </div>
+</form>
+
+
+</body>
+</html>

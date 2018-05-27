@@ -1,0 +1,56 @@
+
+.Registration{
+    color: #66ccff;
+    padding-top: 1px;
+    background-color: white;
+    min-height: 350px;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px #fb8303 solid;
+
+}
+
+.Registration .Regtext{
+    margin: 0 0 0 21%;
+}
+
+
+.Registration .input{
+    font-size: 20px;
+    border: 1px #66ccff solid;
+    border-radius: 5px;
+    height: 30px;
+    width: 76%;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+
+.Registration .input input{
+    border: none;
+    outline-width: 0;
+    width: 90%;
+    height: 28px;
+    margin-left: 5%;
+}
+
+.Registration .submit{
+    border: none;
+    height: 30px;
+    width: 48%;
+    background-color: #66ccff;
+    margin: 20px 0 10px 40%;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.Registration .validation-message{
+    color: red;
+    width: 76%;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    margin-left: 12%;
+}
